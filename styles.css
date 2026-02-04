@@ -97,18 +97,6 @@ body {
     min-height: 320px;
 }
 
-.model-container::after {
-    content: '';
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 150px;
-    cursor: pointer;
-    z-index: 2;
-}
-
 .island-image {
     position: absolute;
     bottom: -16px;
@@ -120,14 +108,7 @@ body {
     max-width: none;
     max-height: none;
     z-index: 1;
-    pointer-events: none;
     animation: levitate-island 4s ease-in-out infinite;
-    transition: transform 0.3s ease;
-}
-
-.model-container:hover .island-image {
-    animation: none;
-    transform: translateX(-45%) scale(0.475);
 }
 
 /* Right section - Games grid */
